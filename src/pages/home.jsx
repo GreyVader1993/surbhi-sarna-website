@@ -1,16 +1,12 @@
 
 import React from 'react';
-import ReactDOM from 'react-dom';
+import Masthead from '../components/masthead';
 
-import App from './App';
-
-ReactDOM.render(
-    <React.StrictMode>
-        <App />
-    </React.StrictMode>,
-    document.getElementById('root')
-);
-
-// Path: src/pages/home.jsx
-
-// Compare this snippet from src/components/footer.jsx:
+export default function Home(){
+    return (
+        <div>
+            <Masthead />
+            <h1>Home</h1>
+        </div>
+    )
+}

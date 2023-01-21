@@ -1,3 +1,5 @@
+// Header component for the website
+
 import { Fragment } from 'react'
 import { Menu, Popover, Transition } from '@headlessui/react'
 import {

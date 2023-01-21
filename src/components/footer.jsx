@@ -1,4 +1,4 @@
-// Footer Component for the App
+// Footer Component for the Website
 
 import React from "react";
 

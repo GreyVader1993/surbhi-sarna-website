@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import Home from './pages/home'
 import About from './pages/about'
 
 import {
@@ -16,6 +16,7 @@ function App() {
     <>
       <Router>
           <Routes>
+            <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
           </Routes>
       </Router>

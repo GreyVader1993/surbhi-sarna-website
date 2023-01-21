@@ -1,7 +1,6 @@
 // set an about page routed 
 
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 export default function About(){
     return (
