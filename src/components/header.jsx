@@ -1,83 +1,30 @@
 // Header component for the website
 
-import { Fragment } from 'react'
-import { Menu, Popover, Transition } from '@headlessui/react'
-import {
-  ArrowPathIcon,
-  Bars3Icon,
-  BookmarkSquareIcon,
-  CalendarIcon,
-  ChartBarIcon,
-  CursorArrowRaysIcon,
-  LifebuoyIcon,
-  PhoneIcon,
-  PlayIcon,
-  ShieldCheckIcon,
-  Squares2X2Icon,
-  XMarkIcon,
-} from '@heroicons/react/24/outline'
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import { Fragment } from "react";
+import { Popover, Transition } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const solutions = [
   {
-    name: 'Analytics',
-    description: 'Get a better understanding of where your traffic is coming from.',
-    href: '#',
-    icon: ChartBarIcon,
+    name: "Services",
+    href: "#",
   },
   {
-    name: 'Engagement',
-    description: 'Speak directly to your customers in a more meaningful way.',
-    href: '#',
-    icon: CursorArrowRaysIcon,
-  },
-  { name: 'Security', description: "Your customers' data will be safe and secure.", href: '#', icon: ShieldCheckIcon },
-  {
-    name: 'Integrations',
-    description: "Connect with third-party tools that you're already using.",
-    href: '#',
-    icon: Squares2X2Icon,
+    name: "Storytelling",
+    href: "#",
   },
   {
-    name: 'Automations',
-    description: 'Build strategic funnels that will drive your customers to convert',
-    href: '#',
-    icon: ArrowPathIcon,
-  },
-]
-const callsToAction = [
-  { name: 'Watch Demo', href: '#', icon: PlayIcon },
-  { name: 'Contact Sales', href: '#', icon: PhoneIcon },
-]
-const resources = [
-  {
-    name: 'Help Center',
-    description: 'Get all of your questions answered in our forums or contact support.',
-    href: '#',
-    icon: LifebuoyIcon,
+    name: "Podcast",
+    href: "#",
   },
   {
-    name: 'Guides',
-    description: 'Learn how to maximize our platform to get the most out of it.',
-    href: '#',
-    icon: BookmarkSquareIcon,
+    name: "Meditation Circle",
+    href: "#",
   },
-  {
-    name: 'Events',
-    description: 'See what meet-ups and other events we might be planning near you.',
-    href: '#',
-    icon: CalendarIcon,
-  },
-  { name: 'Security', description: 'Understand how we take your privacy seriously.', href: '#', icon: ShieldCheckIcon },
-]
-const recentPosts = [
-  { id: 1, name: 'Boost your conversion rate', href: '#' },
-  { id: 2, name: 'How to use search engine optimization to drive traffic to your site', href: '#' },
-  { id: 3, name: 'Improve your customer experience', href: '#' },
-]
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function Header() {
@@ -87,20 +34,34 @@ export default function Header() {
         <div className="flex items-center justify-between border-b-2 border-gray-100 py-6">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <a href="#">
-              <p className="font-fraunces font-bold text-lg text-violet-600 md:text-3xl">Surbhi Sarna</p>
+              <p className="font-fraunces font-bold text-lg text-violet-600 md:text-3xl">
+                Surbhi Sarna
+              </p>
             </a>
           </div>
           <div className="hidden space-x-10 md:flex">
-            <a href="#" className="font-fraunces text-base font-bold text-violet-600 border-transparent border-b-2 hover:text-violet-800 hover:border-violet-800">
+            <a
+              href="#"
+              className="font-fraunces text-base font-bold text-violet-600 border-transparent border-b-2 hover:text-violet-800 hover:border-violet-800"
+            >
               Services
             </a>
-            <a href="#" className="font-fraunces text-base font-bold text-violet-600 border-transparent border-b-2 hover:text-violet-800 hover:border-violet-800">
+            <a
+              href="#"
+              className="font-fraunces text-base font-bold text-violet-600 border-transparent border-b-2 hover:text-violet-800 hover:border-violet-800"
+            >
               Storytelling
             </a>
-            <a href="#" className="font-fraunces text-base font-bold text-violet-600 border-transparent border-b-2 hover:text-violet-800 hover:border-violet-800">
+            <a
+              href="#"
+              className="font-fraunces text-base font-bold text-violet-600 border-transparent border-b-2 hover:text-violet-800 hover:border-violet-800"
+            >
               Podcast
             </a>
-            <a href="#" className="font-fraunces text-base font-bold text-violet-600 border-transparent border-b-2 hover:text-violet-800 hover:border-violet-800">
+            <a
+              href="#"
+              className="font-fraunces text-base font-bold text-violet-600 border-transparent border-b-2 hover:text-violet-800 hover:border-violet-800"
+            >
               Meditation Circle
             </a>
           </div>
@@ -122,7 +83,10 @@ export default function Header() {
         leaveFrom="opacity-100 scale-100"
         leaveTo="opacity-0 scale-95"
       >
-        <Popover.Panel focus className="absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden">
+        <Popover.Panel
+          focus
+          className="absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden"
+        >
           <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
             <div className="px-5 pt-5 pb-6">
               <div className="flex items-center justify-between">
@@ -148,8 +112,9 @@ export default function Header() {
                       href={item.href}
                       className="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50"
                     >
-                      <item.icon className="h-6 w-6 flex-shrink-0 text-indigo-600" aria-hidden="true" />
-                      <span className="ml-3 text-base font-medium text-gray-900">{item.name}</span>
+                      <span className="ml-3 text-base font-medium text-gray-900">
+                        {item.name}
+                      </span>
                     </a>
                   ))}
                 </nav>
@@ -157,27 +122,24 @@ export default function Header() {
             </div>
             <div className="space-y-6 py-6 px-5">
               <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                  Pricing
+                <a
+                  href="#"
+                  className="text-base font-medium text-gray-900 hover:text-gray-700"
+                >
+                  About
                 </a>
 
-                <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                  Docs
+                <a
+                  href="#"
+                  className="text-base font-medium text-gray-900 hover:text-gray-700"
+                >
+                  Contact
                 </a>
-                {resources.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="text-base font-medium text-gray-900 hover:text-gray-700"
-                  >
-                    {item.name}
-                  </a>
-                ))}
               </div>
             </div>
           </div>
         </Popover.Panel>
       </Transition>
     </Popover>
-  )
+  );
 }
