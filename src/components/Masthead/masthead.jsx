@@ -1,7 +1,7 @@
 // Homepage Masthead Component for the website
 
 import React from "react";
-import MastheadImage from "../assets/images/home-masthead.jpg";
+import MastheadImage from "../../assets/images/home-masthead.jpg";
 
 const Masthead = () => {
     return (
