@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Masthead from '../components/Masthead/masthead';
 import TestimonialsSlider from '../components/TestimonialsSlider/testimonialsSlider';
